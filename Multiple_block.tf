@@ -11,3 +11,5 @@ output "Block2" {
 output "Block3" {
   value = "this is third hello world block"
 }
+
+# Note : same working directory all tf file run on terraform plan command
