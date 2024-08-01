@@ -1,10 +1,10 @@
-# Terraform Configuration Block Syntax
+# # Terraform Configuration Block Syntax
 
-// Define a block with "label1" and "label2"
-//      label1 "label2" {
-//           identifier = expression
-//         } 
+# // Define a block with "label1" and "label2"
+# //      label1 "label2" {
+# //           identifier = expression
+# //         } 
 
-output hello { 
-    value = "Hello Shubhm"
-}
+# output hello { 
+#     value = "Hello Shubhm"
+# }
