@@ -9,3 +9,6 @@ variable "username" {
 output "printname" {
   value = "Hello,${var.username}"
 }
+# pass variable value from command
+//  1. Intractive mode : terraform plan
+//  2. Non-intractive mode : terraform plan -var "username=shubham"
