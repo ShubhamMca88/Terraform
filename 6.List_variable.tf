@@ -1,6 +1,6 @@
-# Variable 1 and add types , list 
+# Variable 1 and add Variable types , list 
 variable "username" {
-    type = string
+    type = list(string)
 }
 
 # Variable 2
@@ -9,5 +9,5 @@ variable "age" {
     
 }
 output "printname" {
-   value = "hello , ${var.username},your age is ${var.age}"
+   value = "hello , ${var.username[2]},your age is ${var.age}"
 }
