@@ -3,7 +3,6 @@ variable "username" {
 }
 
 # Variable 2
-
 variable "age" {
     
 }
