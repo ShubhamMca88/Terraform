@@ -1,13 +1,14 @@
-# Variable 1 and add Variable types , list 
+# Use of function in terraform
+ 
 variable "username" {
     type = list(string)
     default = ["sugam","SAURABH","ashu"]
 }
 
-output "printname" {
+output "UpperCase" {
    value = "${upper(var.username[0])}"
 }
 
-output "printname" {
+output "LowerCase" {
    value = "${lower(var.username[1])}"
 }
