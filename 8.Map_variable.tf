@@ -1,8 +1,12 @@
-# Use of function in terraform
+# Use of Map Variable in terraform
  
 variable "username" {
     type = list(string)
-    default = ["sugam","SAURABH","ashu"]
+    default = {
+        Saurabh = 22
+        Ashu = 23
+    }
+    
 }
 
 output "UpperCase" {
