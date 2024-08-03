@@ -1,7 +1,7 @@
 # Use of Map Variable in terraform
  
 variable "username" {
-    type = list(string)
+    type = map
     default = {
         Saurabh = 22
         Ashu = 23
@@ -9,6 +9,6 @@ variable "username" {
     
 }
 
-output "UpperCase" {
-   value = "${upper(var.username[0])}"
+output "username" {
+   value = "My name is Saurabh and my age is ${lookup(var.username ,"Saurabh")}"
 }
