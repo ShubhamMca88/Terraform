@@ -1,14 +1,15 @@
-# Use of Map Variable in terraform
+# Use of Map Variable Dynamically  in terraform
  
-variable "username" {
+variable "user" {
     type = map 
     default = {
         Saurabh = 22
         Ashu = 23
     }
-    
 }
-
+variable "username" {
+  type = string
+}
 output "username" {
-   value = "My name is Saurabh and my age is ${lookup(var.username ,"Saurabh")}"
+   value = "My name is ${var.username} and my age is ${lookup(var.user ,"Saurabh")}"
 }
