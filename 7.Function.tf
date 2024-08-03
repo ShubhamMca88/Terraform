@@ -1,14 +1,14 @@
-# Use of function in terraform
- 
-variable "username" {
-    type = list(string)
-    default = ["sugam","SAURABH","ashu"]
-}
+# # Use of function in terraform
 
-output "UpperCase" {
-   value = "${upper(var.username[0])}"
-}
+# variable "username" {
+#     type = list(string)
+#     default = ["sugam","SAURABH","ashu"]
+# }
 
-output "LowerCase" {
-   value = "${lower(var.username[1])}"
-}
+# output "UpperCase" {
+#    value = "${upper(var.username[0])}"
+# }
+
+# output "LowerCase" {
+#    value = "${lower(var.username[1])}"
+# }
